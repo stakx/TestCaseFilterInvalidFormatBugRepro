@@ -16,6 +16,8 @@ Trying to run the test will result in the following error (visible in the *Outpu
 > [26 Jul 2019 2:03:17.498 PM Informational] ========== Run finished: 0 tests run (0:00:01,1892526) ==========
 > ```
 
+The problem appears to be caused by the way how the arguments produced by the test case source (LINQ expression trees in this case here) are formatted as strings: [see here](https://github.com/stakx/TestCaseFilterInvalidFormatBugRepro/blob/b30781ba3fdf6b9d068cb8a2e6f685b3b48fec8a/TestCaseFilterInvalidFormatBugRepro/Program.cs#L48-L55).
+
 
 ## When run on the console using `vstest.console`
 
