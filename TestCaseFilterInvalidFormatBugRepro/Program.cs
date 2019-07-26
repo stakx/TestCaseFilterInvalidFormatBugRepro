@@ -44,5 +44,14 @@ public class RunnableTests
         {
             this.Value = value;
         }
+
+        // Uncomment the following to break test execution.
+        // This more or less proves that the test executor doesn't appear to
+        // understand formatted LINQ expression trees:
+
+        //public override string ToString()
+        //{
+        //    return this.Value.ToString();
+        //}
     }
 }
